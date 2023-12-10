@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+  import React, { useState } from 'react';
 import './style.css';
 
 const LoginForm = () => {
   const [formData, setFormData] = useState({
-    username: '',
+    email: '',
     password: '',
   });
 
@@ -22,18 +22,18 @@ const LoginForm = () => {
   };
 
   return (
-    <div>
+    <div className='login'>
       <h2>Login Form</h2>
       <form 
         onSubmit={handleSubmit}
-        className="registration"
+        className="loginform"
       >
         <label>
-          Username
+          Email:
           <input
             type="text"
-            name="username"
-            value={formData.username}
+            name="email"
+            value={formData.email}
             onChange={handleChange}
           />
         </label>
@@ -48,7 +48,9 @@ const LoginForm = () => {
           />
         </label>
         <br />
-        <button type="submit">Login</button>
+        <div className='submit'>
+          <button type="submit">Log In</button>
+        </div>
       </form>
     </div>
   );

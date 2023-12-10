@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
@@ -7,15 +6,24 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('../images/banner.jpg');
-    background-repeat: no-repeat;
+    /* background-image: url('../images/banner.jpg'); */
+    /* background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     opacity: 1;
-    min-height: 100vh;
+    min-height: 100vh; */
   }
   
+  .register {
+    border: 1px solid #adadad;
+    border-radius: 10px;
+    background-color: #416f83;
+    padding: 15%;
+    box-shadow: 10px 10px 8px 10px #949494;
+    width: 100%;
+  }
+
   .container {
     background-color: #fff;
     padding: 20px;
@@ -26,11 +34,13 @@ body {
   .registration {
     display: flex;
     flex-direction: column;
+    gap:2px;
   }
 
   h2 {
     text-align: center;
     color: #000;
+    font-family: 'Kaushan Script', cursive;
   }
   
   form {
@@ -40,7 +50,8 @@ body {
   
   label {
     margin-bottom: 8px;
-    color: #007bff;
+    display: flex;
+    justify-content: space-between;
   }
   
   input {
@@ -49,17 +60,22 @@ body {
     border-radius: 4px;
   }
   
+  .submit {
+    align-self: end;
+  }
+
   button {
     padding: 10px;
-    background-color: #007bff;
+    background: #2a9f93;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    width: 70px;
     transition: background-color 0.3s ease;
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #259a8e;
   }
   

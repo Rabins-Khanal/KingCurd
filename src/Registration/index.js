@@ -3,10 +3,11 @@ import './style.css';
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
-    username: '',
+    firstname: '',
+    lastname: '',
     email: '',
     password: '',
-    phone: '',
+    confirmpassword: '',
     question: '',
     answer: '',
   });
@@ -26,24 +27,34 @@ const RegistrationForm = () => {
   };
 
   return (
-    <div>
+    <div className='register'>
       <h2>Registration Form</h2>
       <form 
         onSubmit={handleSubmit}
         className="registration"
       >
         <label>
-          Name:
+          First Name:
           <input
             type="text"
-            name="username"
-            value={formData.username}
+            name="firstname"
+            value={formData.firstname}
             onChange={handleChange}
           />
         </label>
         <br />
         <label>
-          Email Address:
+          Last Name:
+          <input
+            type="text"
+            name="lastname"
+            value={formData.lastname}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <label>
+          Email:
           <input
             type="email"
             name="email"
@@ -63,11 +74,11 @@ const RegistrationForm = () => {
         </label>
         <br />
         <label>
-          Phone Number:
+          Confirm Password:
           <input
-            type="number"
-            name="phone"
-            value={formData.phone}
+            type="password"
+            name="confirmpassword"
+            value={formData.confirmpassword}
             onChange={handleChange}
           />
         </label>
@@ -92,7 +103,9 @@ const RegistrationForm = () => {
           />
         </label>
         <br />
-        <button type="submit">Register</button>
+        <div className='submit'>
+          <button type="submit">Register</button>
+        </div>
       </form>
     </div>
   );
