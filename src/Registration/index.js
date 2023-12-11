@@ -28,7 +28,8 @@ const RegistrationForm = () => {
 
   return (
     <div className='register'>
-      <h2>Registration Form</h2>
+      <h2>Join KingCurd</h2>
+      <h6>Register to embark on an unforgettable experience.</h6>
       <form 
         onSubmit={handleSubmit}
         className="registration"
@@ -42,7 +43,6 @@ const RegistrationForm = () => {
             onChange={handleChange}
           />
         </label>
-        <br />
         <label>
           Last Name:
           <input
@@ -62,7 +62,6 @@ const RegistrationForm = () => {
             onChange={handleChange}
           />
         </label>
-        <br />
         <label>
           Password:
           <input
@@ -72,7 +71,6 @@ const RegistrationForm = () => {
             onChange={handleChange}
           />
         </label>
-        <br />
         <label>
           Confirm Password:
           <input
@@ -82,27 +80,6 @@ const RegistrationForm = () => {
             onChange={handleChange}
           />
         </label>
-        <br />
-        <label>
-          Security Question:
-          <input
-            type="text"
-            name="question"
-            value={formData.question}
-            onChange={handleChange}
-          />
-        </label>
-        <br />
-        <label>
-          Security Answer:
-          <input
-            type="text"
-            name="answer"
-            value={formData.answer}
-            onChange={handleChange}
-          />
-        </label>
-        <br />
         <div className='submit'>
           <button type="submit">Register</button>
         </div>

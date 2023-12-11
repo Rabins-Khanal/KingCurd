@@ -1,4 +1,5 @@
-  import React, { useState } from 'react';
+import React, { useState } from 'react';
+import banner from '../images/banner.png'; 
 import './style.css';
 
 const LoginForm = () => {
@@ -23,33 +24,41 @@ const LoginForm = () => {
 
   return (
     <div className='login'>
-      <h2>Login Form</h2>
       <form 
         onSubmit={handleSubmit}
         className="loginform"
       >
-        <label>
-          Email:
-          <input
-            type="text"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-        </label>
-        <br />
-        <label>
-          Password:
-          <input
-            type="password"
-            name="password"
-            value={formData.password}
-            onChange={handleChange}
-          />
-        </label>
-        <br />
-        <div className='submit'>
+        <div className='loginDetail'>
+          <div className='loginInput'>
+            <div className='loginAccess'>
+            <div>Login to</div>
+            <div>continue access</div>
+            </div>
+          <div className='input'>
+          <label>
+            <input
+              type="text"
+              name="email"
+              placeholder='Email'
+              value={formData.email}
+              onChange={handleChange}
+            />
+          </label>
+          <label>
+            <input
+              type="password"
+              name="password"
+              placeholder='Password'
+              value={formData.password}
+              onChange={handleChange}
+            />
+          </label>
+          </div>
+          <div className='submitButton'>
           <button type="submit">Log In</button>
+          </div>
+          </div>
+        <img src={banner} alt='' width="250" height="300" /> 
         </div>
       </form>
     </div>

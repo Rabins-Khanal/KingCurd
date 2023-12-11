@@ -6,35 +6,20 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* background-image: url('../images/banner.jpg'); */
-    /* background-repeat: no-repeat;
+    background-image: url('../images/banner.png');
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     opacity: 1;
-    min-height: 100vh; */
-  }
-  
-  .register {
-    border: 1px solid #adadad;
-    border-radius: 10px;
-    background-color: #416f83;
-    padding: 15%;
-    box-shadow: 10px 10px 8px 10px #949494;
-    width: 100%;
-  }
-
-  .container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+    backdrop-filter: grayscale(50%);
   }
 
   .registration {
     display: flex;
     flex-direction: column;
-    gap:2px;
+    gap:5px;
   }
 
   h2 {
@@ -60,13 +45,22 @@ body {
     border-radius: 4px;
   }
   
+  .welcome {
+    background-image: url('../images/banner.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    /* background-size: cover; */
+    height: 290px;
+  }
+
   .submit {
     align-self: end;
   }
 
   button {
     padding: 10px;
-    background: #2a9f93;
+    background: #416f83;
     color: #fff;
     border: none;
     border-radius: 4px;
