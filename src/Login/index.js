@@ -58,7 +58,10 @@ const LoginForm = () => {
           <button type="submit">Log In</button>
           </div>
           </div>
-        <img src={banner} alt='' width="250" height="300" /> 
+        <img className='curdImage'
+         src={banner}
+          alt=''
+           width="250" height="280" /> 
         </div>
       </form>
     </div>

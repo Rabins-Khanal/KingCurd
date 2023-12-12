@@ -1,15 +1,27 @@
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 import LoginForm from './Login';
-import RegistrationForm from './Registration'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import RegistrationForm from './Registration';
+import Logo from './images/icon.png';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      {/* <RegistrationForm /> */}
-      <LoginForm />
+        <div className="logo">
+          <img src={Logo} alt="Logo" />
+        </div>
+      <div>
+      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/login" element={<LoginForm />} />
+          <Route path="/register" element={<RegistrationForm />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);

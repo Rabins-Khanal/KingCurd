@@ -42,6 +42,7 @@ const RegistrationForm = () => {
             value={formData.firstname}
             onChange={handleChange}
           />
+          
         </label>
         <label>
           Last Name:
