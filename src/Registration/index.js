@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import banner from '../images/banner.png'; 
 import './style.css';
 
 const RegistrationForm = () => {
@@ -28,12 +29,17 @@ const RegistrationForm = () => {
 
   return (
     <div className='register'>
-      <h2>Join KingCurd</h2>
-      <h6>Register to embark on an unforgettable experience.</h6>
-      <form 
+     <form 
         onSubmit={handleSubmit}
         className="registration"
       >
+        <div className='loginDetail'>
+        <div className='registrationInput'>
+        <div className='registrationAccess'>
+            <div className='kingcurd'>Join KingCurd</div>
+            <div>Register to embark on an unforgettable experience.</div>
+            </div>
+          <div className='registrationLabel'>
         <label>
           First Name:
           <input
@@ -42,8 +48,9 @@ const RegistrationForm = () => {
             value={formData.firstname}
             onChange={handleChange}
           />
-          
         </label>
+        </div>
+        <div className='registrationLabel'>
         <label>
           Last Name:
           <input
@@ -53,7 +60,8 @@ const RegistrationForm = () => {
             onChange={handleChange}
           />
         </label>
-        <br />
+        </div>
+        <div className='registrationLabel'>
         <label>
           Email:
           <input
@@ -63,6 +71,8 @@ const RegistrationForm = () => {
             onChange={handleChange}
           />
         </label>
+        </div>
+        <div className='registrationLabel'>
         <label>
           Password:
           <input
@@ -72,6 +82,8 @@ const RegistrationForm = () => {
             onChange={handleChange}
           />
         </label>
+        </div>
+        <div className='registrationLabel'>
         <label>
           Confirm Password:
           <input
@@ -81,8 +93,15 @@ const RegistrationForm = () => {
             onChange={handleChange}
           />
         </label>
+        </div>
         <div className='submit'>
           <button type="submit">Register</button>
+        </div>
+        </div>
+        <img className='curdImg'
+         src={banner}
+          alt=''
+           width="250" height="360" />
         </div>
       </form>
     </div>

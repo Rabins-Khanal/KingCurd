@@ -23,7 +23,7 @@ body {
     border: 1px solid #adadad;
     border-radius: 8px;
     background-color: #d3d3d3;
-    width: 100% 
+    width: 100%;
   }
 
   .loginDetail {
@@ -57,8 +57,7 @@ body {
   .container {
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
   }
 
   .loginform {
@@ -101,5 +100,5 @@ body {
     background-color: #259a8e;
   }
   .curdImage {
-    border-radius: 4%;
+    border-radius: 3%;
   }
