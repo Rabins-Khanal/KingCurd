@@ -159,4 +159,18 @@ button:hover {
 }
 .register-2 .btn:hover {
     background-color: #259a8e;
-  }
+}
+.register {
+    background-color: #eee;
+}
+.register h3 {
+    font-family: 'Kaushan Script', cursive;
+    color: #000 !important;
+}
+.register .btn {
+    background-color: #416F83;
+    color: #f4f4f4 !important;
+}
+.register .btn:hover {
+    background-color: #259a8e;
+}
