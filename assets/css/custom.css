@@ -131,7 +131,7 @@ button:hover {
     }
 }
 .register-2::before {
-    background-image: url('https://img.freepik.com/free-photo/turkish-yogurt-soup-wooden-table-flat-lay-traditional-thick-soup-made-from-best-dairy-products_166373-5337.jpg?t=st=1702649597~exp=1702653197~hmac=6e213b66ab7998e8e4ece453d35bb49000245d0f2bda73ab775b5b9d9b6ba1b2&w=1380') !important;
+    background-image: url('../images/curd.jpg') !important;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
