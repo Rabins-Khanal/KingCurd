@@ -1,2 +1,0 @@
-# KingCurd
-Online Dairy Store
