@@ -1,0 +1,49 @@
+
+/* ProductForm.css */
+.product-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    border: 2px solid #ccc; /* Add border to the form */
+    background-color: #d0b3b7; /* Add background color to the form */
+    padding: 20px; /* Add padding for spacing inside the form */
+    border-radius: 8px; /* Add rounded corners */
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: space-between; /* Align pairs in two columns */
+  }
+  
+  .form-label {
+    margin-bottom: 8px;
+    color: black;
+    text-align: left; /* Align labels to the left */
+  }
+  
+  .form-input,
+  .form-textarea {
+    padding: 8px;
+    border: 1px solid #ddd; /* Add border to the inputs */
+    border-radius: 4px; /* Add rounded corners to the inputs */
+    flex: 1; /* Allow inputs to take available space */
+  }
+  
+  .form-button {
+    background-color: #000901;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px; /* Add rounded corners to the button */
+    margin-top: 16px; /* Add spacing between inputs and button */
+  }
+  
+  .form-button:hover {
+    background-color: #d09097;
+  }
+  

@@ -28,7 +28,7 @@ const About: React.FC = () => {
       </div>
     </section>
       
-            {/* Your Products page content */}
+            
             <Footer />
         </div>
     );

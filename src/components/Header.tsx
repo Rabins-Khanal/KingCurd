@@ -6,7 +6,7 @@ import { FaShoppingCart } from 'react-icons/fa';
 const Header:React.FC = () => {
   return (
     <div>
-            {/* Navigation Bar */}
+           
             <header className="navbar">
                 <div className="logo-container">
                     <img
@@ -36,6 +36,7 @@ const Header:React.FC = () => {
                     </ul>
                     </div>
                 </nav>
+                <nav>
                 <div className="user-icons">
                  <li className="login-signup">
                    <a href="/login">Login</a>
@@ -50,6 +51,8 @@ const Header:React.FC = () => {
                     <FaShoppingCart className="cart-icon" />
                     </li>
                 </div>
+                </nav>
+
             </header>
             </div>
 

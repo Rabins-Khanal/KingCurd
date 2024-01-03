@@ -6,8 +6,7 @@ import Footer from '../components/Footer';
 const Contact: React.FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Implement your form submission logic here
-    // You can access form data using e.target.elements
+    
   };
 
     return (
@@ -48,7 +47,7 @@ const Contact: React.FC = () => {
       </section>
 
 
-            {/* Your Products page content */}
+           
             <Footer />
         </div>
     );

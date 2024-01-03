@@ -17,6 +17,10 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo-container {

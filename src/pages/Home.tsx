@@ -9,14 +9,14 @@ import { FaTwitter } from "react-icons/fa";
 
 
 
-// Home.tsx
+
 
 import React from 'react';
 
 const Home: React.FC = () => {
     return (
         <div>
-            {/* Navigation Bar */}
+            
             <header className="navbar">
                 <div className="logo-container">
                     <img
@@ -45,6 +45,7 @@ const Home: React.FC = () => {
                     </ul>
                     </div>
                 </nav>
+                <nav>
                 <div className="user-icons">
                  <li className="login-signup">
                    <a href="/login">Login</a>
@@ -52,11 +53,14 @@ const Home: React.FC = () => {
                  <li className="login-signup">
                             <a href="/signup">Signup</a>
                         </li>
+                        
                     <FaShoppingCart className="cart-icon" />
+                    
                 </div>
+                </nav>
             </header>
 
-            {/* Hero Section */}
+            
             <section className="hero-section">
             <div className="background-slider" style={{ backgroundImage: 'url("src/images/curd3.jpg")' }}></div>
                 <div className="hero-content">
@@ -68,7 +72,7 @@ const Home: React.FC = () => {
                 </div>
             </section>
 
-            {/* Featured Products */}
+            
             <section className="featured-products">
                 <h2>Featured Products</h2>
                 <div className="product-card">
@@ -89,7 +93,7 @@ const Home: React.FC = () => {
                 </div>
             </section>
 
-            {/* About Us Section */}
+            
             <section className="about-us">
                 <h2>Why Choose KingCurd?</h2>
                 <p>
@@ -118,7 +122,7 @@ const Home: React.FC = () => {
                 
             </section>
 
-            {/* Contact Section */}
+           
             <section className="contact">
                 <h2>Our Mission</h2>
                 <p>At KingCurd, our mission is to bring the richness of dairy to your home. We are committed to sourcing the highest quality ingredients, promoting sustainable and ethical food practices, and delivering a seamless customer experience. Join us on our journey towards excellence in dairy.</p>
