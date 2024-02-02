@@ -1,0 +1,104 @@
+
+
+
+.product-search-section {
+    background-image: url('src/images/curd2.jpg');
+    
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    background-color: #d09097;
+    padding: 20px;
+    text-align: center;
+  }
+  .search-section h2 {
+    color: #333;
+  }
+  form {
+    margin-top: 20px;
+    display: block;
+  }
+  input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+  }
+  .product-search-section {
+    padding: 10px 20px;
+    background-color: #d09097;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }  
+  
+
+.main-container {
+  display: flex;
+}
+
+.product-sidebar {
+  width: 200px;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.product-sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-sidebar li {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  max-width: 200px;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.quantity-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-input button {
+  background-color: #ddd;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.add-to-cart {
+  background-color: #4caf50;
+  color: rgb(16, 15, 15);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+  

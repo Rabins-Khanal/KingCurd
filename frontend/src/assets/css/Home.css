@@ -1,0 +1,335 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color:  #d0b3b7;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.logo-container img {
+
+    height: 40px;
+    margin-right: 10px;
+}
+
+.brand-name {
+    color: #000709;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 70px;
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #0d3741;
+}
+.user-icons {
+    display: flex;
+    align-items: center;
+}
+.user-icons li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+
+.user-icons a {
+    text-decoration: none;
+    color: #333; /* Add your desired color */
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #d09097; /* Add your desired background color */
+    transition: background-color 0.3s ease-in-out;
+}
+.user-icons a:hover {
+    background-color: #0d3741; /* Add your desired hover background color */
+    color: #fff; /* Add your desired hover text color */
+}
+
+.navbar .cart-icon {
+    color: #010202;
+    font-size: 24px;
+    margin-left: 10px;
+    transition: color 0.3s ease-in-out;
+    height:5px;
+}
+.navbar .cart-icon:hover {
+    color: #f2f9fb;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('src/images/juju-dhau.png');
+    /* background-image: url("src/images/curd3.png"); */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    /* animation: slide 10s linear infinite; */
+
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #d09097;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #0d3741;
+}
+@keyframes slide{
+    0%{
+      transform: translate3d(0, 0, 0);
+    }
+    100%{
+      transform: translate3d(-1692px, 0, 0);
+    }
+  }
+
+/* Featured Products Section */
+.featured-products {
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.featured-products h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+    
+}
+
+.product-card {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product-card img {
+    width: 50%;
+    border-radius: 8px;
+    height: 300px;
+}
+
+.product-card h3 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.product-card p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #d0b3b7 ;
+    padding: 60px 0;
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.about-us p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.contact .cta-button {
+    background-color: #0d3741;
+    color: #ecf0f1;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact .cta-button:hover {
+    background-color:  #6dd5ed;
+}
+
+.about-points {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.about-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-point {
+    width: 48%; /* Adjust the width as needed for responsiveness */
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+}
+
+
+.about-point h3 {
+    color: #0d3741;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.about-point p {
+    font-size: 16px;
+    color: #333;
+}
+.free-shipping-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .free-shipping-icon {
+    font-size: 20px; /* Adjusted font size for the icon */
+    margin-right: 15px; /* Adjusted margin for spacing between icon and text */
+  }
+  .free-shipping-text {
+    font-size: 16px; /* Adjusted font size for the text */
+    color: #333; /* Adjusted color for the text */
+  }    
+
+  .footer {
+    background-color: #d0b3b7;
+  color: #333;
+  padding: 40px 0;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .footer-section {
+    flex: 1;
+    margin-right: 20px;
+  }
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .footer-section p {
+    font-size: 10px;
+  }
+  .social-icons a {
+    color: #ecf0f1;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  ul li {
+    margin-bottom: 10px;
+  }
+  ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 10px;
+  }
+  ul li a:hover {
+    text-decoration: underline;
+  }
+  .footer-section:last-child {
+    flex-basis: 300px;
+  }
+  .footer-section:last-child p {
+    white-space: pre-line;
+  }      
